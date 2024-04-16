@@ -2,7 +2,7 @@ package printer;
 
 public class Printer {
 	private boolean colorPrint;
-	private String type, name, producer, printFormat;
+	private String type, name, producer, printFormat, typeConnect;
 	private float price;
 	private int speedPrint;
 	public void Print(String text, String color) {
@@ -88,5 +88,11 @@ public class Printer {
 			throw new Exception("Speed printing bigger than 0!");
 		else
 			this.speedPrint = speedPrint;
+	}
+	public String getTypeConnect() {
+		return typeConnect;
+	}
+	public void setTypeConnect(String typeConnect) {
+		this.typeConnect = typeConnect;
 	}
 }
